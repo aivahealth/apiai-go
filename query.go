@@ -57,7 +57,7 @@ type Metadata struct {
 
 type Message struct {
 	Type     interface{}  `json:"type"`
-	Speech   string       `json:"speech"`
+	Speech   interface{}  `json:"speech"` // string or []string
 	ImageUrl string       `json:"imageUrl"`
 	Title    string       `json:"title"`
 	Subtitle string       `json:"subtitle"`
